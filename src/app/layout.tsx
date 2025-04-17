@@ -19,15 +19,17 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider afterSignOutUrl="/">
+      <TRPCProvider>
     <html lang="en">
       <body
         className={`${inter.className} antialiased`}
       >
-        <TRPCProvider>
+        
           {children}
-        </TRPCProvider>
+        
       </body>
     </html>
+    </TRPCProvider>
     </ClerkProvider>
   );
 }

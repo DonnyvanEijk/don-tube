@@ -5,7 +5,7 @@ import { ErrorBoundary } from "react-error-boundary"
 
 export default async function Home() {
   void trpc.hello.prefetch({
-    text: "prefetch"
+    text: "Sigma"
   })
   return (
     <HydrateClient>
